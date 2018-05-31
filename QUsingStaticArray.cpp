@@ -27,12 +27,13 @@ void Delete()
 	}
 	else
 	{
-		cout << "deleted" << queue[front] <<"from queue" <<endl;
+		cout << "deleted " << queue[front] <<" from queue" <<endl;
 		for(int i=0 ; i < rear-1 ; i++)
 		{
 			queue[i]=queue[i+1];
 		}
 		rear--;
+		cout << endl  ;
 	}
 }
 
@@ -49,6 +50,7 @@ void traverse()
 		{
 			cout << queue[i] << " ";
 		}
+		cout << endl <<endl ;
 	}
 }
 
